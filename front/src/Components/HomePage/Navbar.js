@@ -16,16 +16,22 @@ const Navbar = () => {
         </div>
 
        {/* Desktop Menu Items */}
-       <div className="hidden md:flex flex-1 justify-end space-x-32 text-5xl font-header">
+       <div className="hidden md:flex flex-1 justify-end space-x-28 px-10 items-center text-5xl font-header">
+         
+       <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
+            Contact
+          </Link>
+       <Link to="services" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
+            Services
+          </Link>
           <Link to="gallery" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
             Gallery
           </Link>
-          <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
-            Contact
+          
+          <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
+            About Us
           </Link>
-          <Link to="images" smooth={true} duration={500} className="cursor-pointer hover:text-sage-green">
-            Images
-          </Link>
+         
         </div>
 
        {/* Mobile menu button */}
@@ -72,7 +78,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden text-Bright-White px-6 text-center pt-4 pb-6 text-2xl font-header space-y-4" style={{ backgroundImage: `url('/images/Leather.jpg')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        <div className="md:hidden text-Bright-White px-6 text-center pt-4 pb-6 text-4xl font-header space-y-4" style={{ backgroundImage: `url('/images/Leather.jpg')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
           <Link
             to="gallery"
             smooth={true}
